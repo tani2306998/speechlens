@@ -5,6 +5,8 @@ Our own pipeline then cleans it, corrects ASR errors with an n-gram language mod
 a summary, keywords, entities, relations, a question-answering box and downloadable notes.
 A second page, **Inside the model**, opens Whisper up (log-Mel, encoder, decoder, attention, WER experiments).
 
+**Live demo:** https://speechlens-f6qmgcsq4i8rateebzjbapp.streamlit.app/
+
 ## System Pipeline
 
 | Stage | Method | File / function |
