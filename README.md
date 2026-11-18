@@ -5,17 +5,17 @@ Our own pipeline then cleans it, corrects ASR errors with an n-gram language mod
 a summary, keywords, entities, relations, a question-answering box and downloadable notes.
 A second page, **Inside the model**, opens Whisper up (log-Mel, encoder, decoder, attention, WER experiments).
 
-## Pipeline and Syllabus Mapping
+## System Pipeline
 
-| Stage | Method | File / function | Syllabus |
-|---|---|---|---|
-| ASR | pretrained Whisper (encoder-decoder Transformer) | `app.py`, `whisper_internals.py` | Unit 4 |
-| Clean-up | regular expressions | `clean_transcript` | Unit 1|
-| Error correction | trigram Kneser-Ney LM, beam rescoring, WER | `LectureLM.correct`, `wer_score` | Unit 5 |
-| Keywords, summary | TF-IDF (noun phrases; length-adjusted sentence scores) | `keywords`, `summarize` | Unit 3 |
-| Entities, relations | spaCy NER, dependency parse | `entities`, `relations` | Unit 1 |
-| Q&A | TF-IDF cosine retrieval | `QAIndex` | Unit 2 |
-| Spoken answer | gTTS | `speak` | Unit 3 | 
+| Stage | Method | File / function |
+|---|---|---|
+| ASR | pretrained Whisper (encoder-decoder Transformer) | `app.py`, `whisper_internals.py` |
+| Clean-up | regular expressions | `clean_transcript` |
+| Error correction | trigram Kneser-Ney LM, beam rescoring, WER | `LectureLM.correct`, `wer_score` |
+| Keywords, summary | TF-IDF (noun phrases; length-adjusted sentence scores) | `keywords`, `summarize` |
+| Entities, relations | spaCy NER, dependency parse | `entities`, `relations` |
+| Q&A | TF-IDF cosine retrieval | `QAIndex` |
+| Spoken answer | gTTS | `speak` |
 
 ## Setup
 
