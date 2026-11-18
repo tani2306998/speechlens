@@ -22,7 +22,7 @@ A second page, **Inside the model**, opens Whisper up (log-Mel, encoder, decoder
 Requires Python 3.10+ and [ffmpeg](https://ffmpeg.org) (macOS: `brew install ffmpeg`).
 
 ```bash
-git clone https://github.com/<your-username>/speechlens.git
+git clone https://github.com/tani2306998/speechlens.git
 cd speechlens
 python3 -m venv venv
 source venv/bin/activate
