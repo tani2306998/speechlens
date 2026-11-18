@@ -1,0 +1,60 @@
+automatic speech recognition converts spoken language into written text
+speech recognition models use a log mel spectrogram as input
+the log mel spectrogram is computed from the waveform
+we extract log mel spectrogram features from the audio
+the log mel spectrogram has eighty mel bands
+a mel filterbank converts the spectrum into mel bands
+the audio is sampled at sixteen kilohertz
+the short time fourier transform uses a window of twenty five milliseconds
+the hop between frames is ten milliseconds
+whisper is a pretrained model released by openai
+whisper was trained on six hundred eighty thousand hours of labelled audio
+the encoder converts the log mel spectrogram into contextual vectors
+the decoder generates the transcript one token at a time
+the transformer uses self attention and an encoder decoder architecture
+cross attention lets the decoder look at the audio features
+the model predicts the next token from the previous tokens
+beam search keeps several candidate sentences
+greedy decoding picks the most probable token at each step
+word error rate measures the accuracy of speech recognition
+word error rate counts substitutions deletions and insertions
+the word error rate is the edit distance divided by the number of reference words
+kneser ney smoothing improves an n gram language model
+an n gram language model predicts the next word from the previous words
+the language model scores the candidate sentences
+perplexity measures how well a language model predicts a text
+a bigram model uses one previous word and a trigram model uses two previous words
+smoothing gives a small probability to unseen n grams
+the language model corrects recognition errors by rescoring the transcript
+the acoustic model maps sound to phonemes and the language model scores word sequences
+hidden markov models were used in traditional speech recognition
+connectionist temporal classification aligns audio frames with output tokens
+text to speech converts written text into spoken audio
+a chatbot answers questions about the transcript
+tf idf weighs the terms in a document
+term frequency counts how often a word occurs in a document
+inverse document frequency lowers the weight of common words
+cosine similarity compares a question with each sentence
+named entity recognition finds names places organisations and dates
+relation extraction finds relations between entities
+a knowledge graph stores entities and their relations
+part of speech tagging labels each word as a noun verb or adjective
+word sense disambiguation chooses the correct meaning of a word
+the lesk algorithm uses dictionary definitions to disambiguate words
+a recurrent neural network processes a sequence of words
+the attention mechanism weighs the importance of each position
+the transformer replaced recurrent networks in many language tasks
+a tokenizer splits text into tokens
+stop words such as the and of carry little meaning
+stemming and lemmatization reduce words to a base form
+regular expressions find patterns in text
+the lecture explains the topic in a spoken form
+a summary keeps the most important sentences of the lecture
+keywords describe the main topics of the lecture
+the transcript is cleaned before it is summarised
+background noise increases the word error rate
+a larger model is more accurate but slower
+the signal to noise ratio compares speech with noise
+the microphone records the speech of the lecturer
+the lecturer introduced the concept and gave an example
+the student asks a question about the lecture

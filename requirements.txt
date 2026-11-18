@@ -1,0 +1,12 @@
+streamlit>=1.39
+openai-whisper
+torch
+numpy
+pandas
+matplotlib
+jiwer
+scikit-learn
+nltk
+spacy
+gTTS
+pyspellchecker
